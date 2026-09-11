@@ -1,272 +1,350 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/home.css" />
-    <title>Document</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/home.css">
+    <title>ChaloChale - Travel Website</title>
 </head>
+<body>  
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Navbar Start-->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
-                    <div class="container-fluid">
-                        <a class="navbar-brand fw-bold" href="#">
-                            <i class="fa-solid fa-plane-departure"></i> ChaloChale
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                            aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="menu">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
-                                <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
-                                <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            </ul>
-                            
-                            <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 w-100">
-                <!-- Carousel Start-->
-                <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0"
-                            class="active"></button>
-                        <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://static.vecteezy.com/system/resources/thumbnails/076/306/958/small/sunset-over-beach-and-mountain-landscape-a-sunset-lights-up-the-sky-above-a-beach-with-waves-and-rocks-near-a-mountain-colors-reflect-on-the-water-photo.jpg"
-                                class="d-block w-100" height="500" alt="Beach">
-                            <div class="carousel-caption">
-                                <h2 class="fw-bold">Explore Beautiful Beaches</h2>
-                                <p>Plan your next vacation with ChaloChale.</p>
-                                <button class="btn btn-primary"> Explore Now</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://wanderon-images.gumlet.io/blogs/new/2023/09/denissa-devy-fu2mus9qmn8-unsplash-min-scaled.jpg?auto=compress%2Cformat&w=768"
-                                class="d-block w-100" height="500" alt="Mountains">
-                            <div class="carousel-caption">
-                                <h2 class="fw-bold">Adventure in Mountains</h2>
-                                <p>Discover trekking and hiking packages.</p>
-                                <button class="btn btn-success">View Packages</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://img.magnific.com/free-photo/los-angeles-downtown-buildings-night_649448-298.jpg?semt=ais_hybrid&w=740&q=80"
-                                class="d-block w-100" height="500" alt="City">
-
-                            <div class="carousel-caption">
-                                <h2 class="fw-bold">Enjoy City Tours</h2>
-                                <p>Book affordable city travel plans.</p>
-                                <button class="btn btn-warning">Book Trip</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="fa-solid fa-plane-departure"></i>
+                ChaloChale
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="signup.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">Signup</a>
+                <a href="login.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">Login</a>
             </div>
         </div>
+    </nav>
+
+
+    <!-- ==================== CAROUSEL ==================== -->
+    <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+            </button>
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+            </button>
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+            </button>
+        </div>
+
+        <!-- Carousel Images -->
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/076/306/958/small/sunset-over-beach-and-mountain-landscape-a-sunset-lights-up-the-sky-above-a-beach-with-waves-and-rocks-near-a-mountain-colors-reflect-on-the-water-photo.jpg"
+                    class="d-block w-100" height="500" alt="Beautiful beach at sunset">
+                <div class="carousel-caption">
+                    <h2 class="fw-bold">Explore Beautiful Beaches</h2>
+                    <p>Plan your next vacation with ChaloChale.</p>
+                    <a href="destinations.html" class="btn btn-primary">Explore Now</a>
+                </div>
+            </div>
+
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+
+                <img src="https://wanderon-images.gumlet.io/blogs/new/2023/09/denissa-devy-fu2mus9qmn8-unsplash-min-scaled.jpg?auto=compress%2Cformat&w=768"
+                    class="d-block w-100" height="500" alt="Mountain landscape">
+                <div class="carousel-caption">
+                    <h2 class="fw-bold">Adventure in Mountains</h2>
+                    <p>Discover trekking and hiking packages.</p>
+                    <a href="packages.html" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://img.magnific.com/free-photo/los-angeles-downtown-buildings-night_649448-298.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="d-block w-100" height="500" alt="City buildings at night">
+                <div class="carousel-caption">
+                    <h2 class="fw-bold">Enjoy City Tours</h2>
+                    <p>Book affordable city travel plans.</p>
+                    <a href="booking.html" class="btn btn-warning">Book Trip</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <section class="py-5 bg-light">
-                <div class="container">
-                    <h2 class="text-center fw-bold mb-4">Why Choose ChaloChale?</h2>
-                    <div class="row text-center">
-                        <div class="col-md-4 mb-4">
-                            <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
-                            <h5 class="fw-bold">Easy Booking</h5>
-                            <p>Book travel packages quickly with our simple booking system.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <i class="fa-solid fa-hotel fa-3x text-success mb-3"></i>
-                            <h5 class="fw-bold">Best Hotels</h5>
-                            <p>We provide comfortable hotel stays at affordable prices.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <i class="fa-solid fa-headset fa-3x text-warning mb-3"></i>
-                            <h5 class="fw-bold">24/7 Support</h5>
-                            <p>Our travel support team is available anytime for assistance.</p>
-                        </div>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="py-5 bg-light">
+
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="text-center fw-bold mb-4">Why Choose ChaloChale?</h2>
+                <p>From easier planning to better local support, every ChaloChale trip is designed to feel smooth and memorable.</p>
+            </div>
+            <div class="row text-center features-grid">
+                <!-- Easy Booking -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Easy Booking</h5>
+                        <p>Book travel packages quickly with our simple
+                            booking system.</p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </div>
 
-    <!-- Destinations Section -->
+
+                <!-- Best Hotels -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-hotel fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold">Best Hotels</h5>
+                        <p>We provide comfortable hotel stays at
+                            affordable prices.</p>
+                    </div>
+                </div>
+
+                <!-- 24/7 Support -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-headset fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold">24/7 Support</h5>
+                        <p>
+                            Our travel support team is available anytime
+                            for assistance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== DESTINATIONS ==================== -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-4">Popular Destinations</h2>
+            <div class="section-heading">
+                <h2 class="text-center fw-bold mb-4">Popular Destinations</h2>
+                <p>Find iconic places across India, from golden beaches to royal forts and mountain escapes.</p>
+            </div>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+
+                <!-- Agra -->
+                 <div class="col-md-4 mb-4">
+                    <div class="destination-card card shadow h-100">
                         <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=60"
-                            class="card-img-top" height="220" alt="Taj Mahal">
+                            class="card-img-top" height="220" alt="Taj Mahal in Agra">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Agra</h5>
-                            <p class="card-text">Visit the Taj Mahal and explore Mughal history.</p>
-                            <a href="#" class="btn btn-primary">Explore</a>
+                            <p class="card-text">Visit the Taj Mahal and explore
+                                Mughal history.</p>
+                            <a href="destinations.html" class="btn btn-primary">Explore</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Goa -->
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="destination-card card shadow h-100">
                         <img src="https://assets.cntraveller.in/photos/67f6324c24bc54d15bbde012/master/w_2560%2Cc_limit/GettyImages-1263341271.jpg"
-                            class="card-img-top" height="220" alt="Taj Mahal">
+                            class="card-img-top" height="220" alt="Beach in Goa">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Goa</h5>
-                            <p class="card-text">Enjoy Beaches,nightlife and water sports.</p>
-                            <a href="#" class="btn btn-primary">Explore</a>
+                            <p class="card-text">Enjoy beaches, nightlife and
+                                water sports.</p>
+                            <a href="destinations.html" class="btn btn-primary">Explore</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Jaipur -->
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="destination-card card shadow h-100">
                         <img src="https://www.agoda.com/wp-content/uploads/2024/05/Nahargarh-Fort-jaipur-india-1244x700.jpg"
-                            class="card-img-top" height="220" alt="Taj Mahal">
+                            class="card-img-top" height="220" alt="Nahargarh Fort in Jaipur">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Jaipur</h5>
-                            <p class="card-text">Explore forts, palaces, and Rajasthan culture..</p>
-                            <a href="#" class="btn btn-primary">Explore</a>
+                            <p class="card-text">Explore forts, palaces and
+                                Rajasthan culture.</p>
+                            <a href="destinations.html" class="btn btn-primary">Explore</a>
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Packages Section -->
+
+    <!-- ==================== PACKAGES ==================== -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center fw-bold mb-4">Featured Packages</h2>
+            <div class="section-heading">
+                <h2 class="text-center fw-bold mb-4">Featured Packages</h2>
+                <p>Choose a perfect getaway built around your style, budget, and travel mood.</p>
+            </div>
             <div class="row">
+                <!-- Goa Package -->
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="package-card card shadow h-100">
                         <div class="card-body">
-                            <h5 class="fw-bold">Goa Beach Package</h5>
+                            <span class="package-tag"><i class="fa-solid fa-location-dot"></i> Beach Escape</span>
+                            <h5 class="fw-bold card-title">Goa Beach Package</h5>
                             <p>Duration: 5 Days / 4 Nights</p>
-                            <h4 class="text-success fw-bold">₹15,999</h4>
-                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal"
-                                data-bs-target="#bookingModal">
-                                Book Now
-                            </button>
+                            <h4 class="text-success fw-bold price">₹14,999</h4>
+                            <button type="button" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">Book Now</button>
                         </div>
                     </div>
                 </div>
-
+                
+                <!-- Manali Package -->
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="package-card card shadow h-100">
                         <div class="card-body">
-                            <h5 class="fw-bold">Manali Adventure Package</h5>
+                            <span class="package-tag"><i class="fa-solid fa-mountain-sun"></i> Nature Trip</span>
+                            <h5 class="fw-bold card-title">Manali Adventure Package</h5>
                             <p>Duration: 6 Days / 5 Nights</p>
-                            <h4 class="text-success fw-bold">₹18,499</h4>
-                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal"
-                                data-bs-target="#bookingModal">
-                                Book Now
-                            </button>
+                            <h4 class="text-success fw-bold price">₹18,999</h4>
+                            <button type="button" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">Book Now</button>
                         </div>
                     </div>
                 </div>
 
+                <!-- Kerala Package -->
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="package-card card shadow h-100">
                         <div class="card-body">
-                            <h5 class="fw-bold">Kerala Backwater Package</h5>
+                            <span class="package-tag"><i class="fa-solid fa-water"></i> Backwater Stay</span>
+                            <h5 class="fw-bold card-title">Kerala Backwater Package</h5>
                             <p>Duration: 4 Days / 3 Nights</p>
-                            <h4 class="text-success fw-bold">₹12,999</h4>
-                            <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal"
-                                data-bs-target="#bookingModal">
-                                Book Now
-                            </button>
+                            <h4 class="text-success fw-bold price">₹12,999</h4>
+                            <button type="button" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">Book Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- packages section ends-->
 
-    <!-- Booking Modal Start -->
-    <div class="modal fade" id="bookingModal" tabindex="-1">
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
+                <!-- Modal Header -->
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">Book Your Trip</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Trip</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+
+                <!-- Modal Body -->
                 <div class="modal-body">
                     <form>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Full Name</label>
-                                <input type="text" class="form-control" placeholder="Enter your name">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="Enter your name" required>
                             </div>
 
+
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" placeholder="Enter email">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter email" required>
                             </div>
+
                         </div>
+
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Select Destination</label>
-                                <select class="form-select">
-                                    <option>Goa</option>
-                                    <option>Manali</option>
-                                    <option>Kerala</option>
-                                    <option>Jaipur</option>
+                                <label for="destination" class="form-label">Select Destination</label>
+                                <select id="destination" class="form-select" required>
+                                    <option value="">Choose Destination </option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Manali">Manali</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Jaipur">Jaipur</option>
                                 </select>
                             </div>
 
 
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Travel Date</label>
-                                <input type="date" class="form-control">
+                                <label for="travelDate" class="form-label">
+                                    Travel Date
+                                </label>
+                                <input type="date" id="travelDate" class="form-control" required>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Number of People</label>
-                            <input type="number" class="form-control" placeholder="Enter number of people">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="3" placeholder="Any special request?"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">Submit Booking Request</button>
 
+                        </div>
+
+
+                        <!-- Number of People -->
                         <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="3" placeholder="Any special request?"></textarea>
+                            <label for="people" class="form-label">
+                                Number of People
+                            </label>
+                            <input type="number" id="people" class="form-control" placeholder="Enter number of people"
+                                min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="3"
+                                placeholder="Any special request?"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success w-100">Submit Booking Request</button>
                     </form>
@@ -274,18 +352,23 @@
             </div>
         </div>
     </div>
-    <!-- Booking Modal End -->
-
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2026 ChaloChale Travel App | Designed with Bootstrap</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start">
+                    <p class="mb-0">© 2026 ChaloChale Travel App | Designed with Bootstrap</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-
 </body>
 
 </html>
