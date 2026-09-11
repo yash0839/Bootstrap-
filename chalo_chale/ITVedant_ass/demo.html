@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer · ITVEDANT</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    .footer-section {
+      background-color: #f8f9fa;
+      border-top: 1px solid #dee2e6;
+      padding: 3rem 0 2rem 0;
+    }
+    .footer-section h5 {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #000;
+      margin-bottom: 1.2rem;
+    }
+    .footer-address {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #212529;
+    }
+    .footer-section .list-unstyled li {
+      margin-bottom: 0.4rem;
+    }
+    .footer-section .list-unstyled a {
+      text-decoration: none;
+      color: #212529;
+      font-size: 0.95rem;
+      color: #0d6efd;
+    }
+    .footer-section .list-unstyled a:hover {
+      color: #0d6efd;
+      text-decoration: underline;
+    }
+    /* Vertical list of icons - one below another */
+    .connect-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .connect-list li {
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .connect-list i {
+      font-size: 15px;
+      color: #2c3e50;
+      width: 30px;
+      cursor: default;
+    }
+    .connect-list i:hover {
+      color: #0d6efd;
+    }
+    .connect-list span {
+      font-size: 0.95rem;
+      color: #212529;
+    }
+    /* Mobile stack for columns */
+    @media (max-width: 768px) {
+      .footer-section .row > div {
+        margin-bottom: 2rem;
+      }
+      .footer-section .row > div:last-child {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== EXACT FOOTER AS PER IMAGE ====== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+
+        <!-- Column 1: Company Name + Address -->
+        <div class="col-md-4">
+          <h5>ITVEDANT EDUCATION PVT LTD.</h5>
+          <div class="footer-address">
+            3rd floor, Korem Mall,<br />
+            Near Toyota Showroom,<br />
+            Road No 22, Wagle Estate<br />
+            Thane-West
+          </div>
+        </div>
+
+        <!-- Column 2: Quick links -->
+        <div class="col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Placements</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Connect Us - VERTICAL LIST (one below another) -->
+        <div class="col-md-4">
+          <h5>Connect Us</h5>
+          <ul class="connect-list">
+            <li>
+              <i class="bi bi-facebook"></i>
+            </li>
+            <li>
+              <i class="bi bi-instagram"></i>
+            </li>
+            <li>
+              <i class="bi bi-twitter"></i>
+            </li>
+            <li>
+              <i class="bi bi-linkedin"></i>
+            </li>
+            <li>
+              <i class="bi bi-youtube"></i>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

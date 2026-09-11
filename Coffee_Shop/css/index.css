@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    --coffee: #6f4e37;
+    --dark: #201611;
+    --cream: #f8f3ed;
+    --gold: #c99a5b
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #30231d;
+    background: #fff
+}
+
+.navbar {
+    background: rgba(25, 17, 13, .96);
+    padding: 14px 0
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem
+}
+
+.nav-link {
+    margin: 0 5px
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e5b873 !important
+}
+
+.btn-coffee {
+    background: var(--coffee);
+    color: #fff;
+    border: none
+}
+
+.btn-coffee:hover {
+    background: #543a29;
+    color: #fff
+}
+
+.badge {
+    background: #c99a5b;
+    color: #201611
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(22, 14, 10, .86), rgba(22, 14, 10, .35)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85') center/cover;
+    color: #fff
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1.05
+}
+
+.hero h1 span {
+    color: #e4b26b
+}
+
+.hero p {
+    max-width: 600px
+}
+
+.eyebrow {
+    font-size: .78rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #c99a5b
+}
+
+.section-padding {
+    padding: 90px 0
+}
+
+.section-heading {
+    margin-bottom: 45px
+}
+
+.section-heading h2,
+.features-section h2,
+.offer-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem
+}
+
+.coffee-card {
+    border: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(50, 30, 20, .09);
+    transition: .3s
+}
+
+.coffee-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 35px rgba(50, 30, 20, .16)
+}
+
+.coffee-card img {
+    height: 220px;
+    object-fit: cover
+}
+
+.coffee-card h5 {
+    font-weight: 700
+}
+
+.coffee-card strong {
+    color: var(--coffee);
+    font-size: 1.1rem
+}
+
+.features-section {
+    background: var(--cream)
+}
+
+.feature-box {
+    padding: 30px
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--coffee)
+}
+
+.feature-box h4 {
+    margin-top: 15px;
+    font-weight: 700
+}
+
+.offer-box {
+    background: #2a1c15;
+    color: #fff
+}
+
+.footer {
+    background: #201611;
+    color: #ddd
+}
+
+.footer h4,
+.footer h6 {
+    color: #fff
+}
+
+.footer a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin: 8px 0
+}
+
+.footer a:hover {
+    color: #e5b873
+}
+
+.socials {
+    display: flex;
+    gap: 15px
+}
+
+.socials a {
+    font-size: 1.4rem
+}
+
+.page-header {
+    padding: 150px 0 80px;
+    background: var(--cream);
+    text-align: center
+}
+
+.page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem
+}
+
+.gallery-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: .3s
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+    filter: brightness(.9)
+}
+
+.contact-info p {
+    margin: 20px 0
+}
+
+.contact-info i {
+    color: var(--coffee);
+    width: 30px
+}
+
+.form-card,
+.auth-card {
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(50, 30, 20, .1);
+    border-radius: 16px
+}
+
+.auth-page {
+    background: var(--cream);
+    min-height: 100vh
+}
+
+.auth-card {
+    max-width: 470px;
+    padding: 45px
+}
+
+.brand-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--coffee);
+    text-decoration: none
+}
+
+.auth-card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 25px
+}
+
+.auth-card a {
+    color: var(--coffee)
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px
+}
+
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 .2rem rgba(201, 154, 91, .2)
+}
+
+@media(max-width:576px) {
+    .section-padding {
+        padding: 65px 0
+    }
+
+    .page-header {
+        padding: 130px 0 60px
+    }
+
+    .page-header h1 {
+        font-size: 2.6rem
+    }
+
+    .auth-card {
+        padding: 30px 22px
+    }
+
+    .hero h1 {
+        font-size: 3.2rem
+    }
+}
